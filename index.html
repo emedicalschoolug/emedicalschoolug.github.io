@@ -1,266 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>E-MEDICAL SCHOOL</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-<style>.column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  </style>
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medics Educational Website</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+nav {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+main {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.conte-section{
+    background-image:image(carousel-12.jpg);
+}
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dropdown {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content-section {
+            width: 45%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white pr-3" href="">FAQs</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white px-3" href="">Help</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="">Support</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-white pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+    <div class="container">
+        <header>
+            <h1>WELCOME TO E-MEDICAL SCHOOL</h1>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for headings...">
+        </div>
+        
+        <div class="dropdown">
+            <label for="dcm-dropdown">Select DCM Notes: </label>
+            <select id="dcm-dropdown" onchange="navigateToSection()">
+                <option value="">--Select--</option>
+                <option value="dcm-1-1">DCM 1.1</option>
+                <option value="dcm-1-2">DCM 1.2</option>
+                <option value="more cources.html">go 2 nxt page</option>
+                
+           
+            </select>
+        </div>
+        <button style="border-radius: 10px; color:gold;"><p><a href="index.html" target="_blank">HOME</a></p></button>
+        
+        <button style="border-radius: 10px; color:gold;"><p><a href="About.html" target="_blank">About us</a></p></button>
+        <button style="border-radius: 10px; color:gold;"><p><a href="more cources.html" target="_blank">more cources</a></p></button>
+        
+        <div class="content">
+            <div class="content-section" id="dcm-1-1">
+                <h2>DCM 1.1</h2>
+                <h3>NOTES</h3>
+                <h4>First aid</h4>
+              
+                <button><p><a href="First aid notes.pdf" target="_blank">First aid notes</a></p></button>
+                <p><a href="First Aid Made Easy.pdf" target="_blank">first aid made easy</a></p>
+                <p><a href="https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps" target="_blank">Visit redcross</a></p>
+                <h4>Videos(firt aid)</h4>
+                <p><a href="https://www.youtube.com/watch?v=5OKFljZ2GQE" target="_blank">wath a video1</a></p>
+                <p><a href="https://www.youtube.com/watch?v=QneVtFJYySo#:~:text=URL%3A%20https%3A%2F%2Fwww,100" target="_blank">wath a video2</a></p>
+                <h4>Aanatomy & physiology</h4>
+                <p><a href="RESPIRATORY SYSTEM.pdf" target="_blank">Resoiratory system</a></p>
+                <p><a href="TheCirculatorySystem.pdf" target="_blank">The CirculatorySystem</a></p>
+                <p><a href="URINARY  SYSTEM.pdf" target="_blank">Urinary system</a></p>
+                <h4>Psychology</h4>
+                <p><a href="psychology.pdf" target="_blank">Social psychology</a></p>
+                <h4>Nursing practices</h4>
+                <p><a href="nursing manual.pdf" target="_blank">Nursing manual</a></p>
+                
+                <h4>PHC</h4>
+                <p><a href="PHC intro.pdf" target="_blank">PHC intro</a></p>
+                <h4>Medical ethics</h4>
+                <p><a href="MEDICAL ETHICS.pdf" target="_blank">Introduction to medical ethics</a></p>
+                <h4>ICT</h4>
+                <p><a href="ICT NOTES 2022 this sem Notes.pdf" target="_blank">ICT notes</a></p>
             </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-secondary"><span class="text-primary">E-MEDICAL</span>SCHOOL</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        
-                            </div>
-                        </div>
-                        <a href="About.html" class="nav-item nav-link">About us</a>
-                        <a href="upload.html" class="nav-item nav-link active">Upload a file</a>
-                        <a href="*185*1*0751987885#" class="nav-item nav-link active">Donate</a>
-                        
-                        
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 style="color: gold;">WELCOME TO E-MEDICAL SCHOOL</h1><br/><br/>
-                            <h4 style="color: antiquewhite;">Through this website, we provide learning materials like;</h4>
-                            <div class="do"><p><li>Soft copy Notes/ pdfs & other forms </li></p>
-                           <p ><li>lectures through video tutorials</li></p>
-                            <li>UAHEB and UBITEB past papers</li>
-                            <p><li>Online lectures from your best tutor</li></p>
-                        </div>
-                            
-                            <br/><br/>
-                            <div class="row">
-                                <div class="column">
-                                    <h4 style="color: bisque;">Click your diploma  Course </h4><br/>
-  <p style="background-color: gold; border-radius: 50px;"><a href="dcm semesters.html">Diploma clinical medicine</a></p>
-  <p style="background-color: gold; border-radius: 50px;" ><a href="index.html">Diploma medical lab</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Diploma in pharmacy</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Diploma in medical records</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Diploma in radiology</a></p>
-
-                                </div>
-                                <div class="column">
-                                    <h4 style="color: bisque;">Click certificate Course below</h4><br/>
-<p style="background-color: gold; border-radius: 50px;"><a href="index.html">Certificate in Pharmacy</a></p>
-  <p style="background-color: gold; border-radius: 50px;" ><a href="index.html">certificate in medical lab</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Certificate in medical records</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Certificatein radiology</a></p>
-  <p style="background-color: gold; border-radius: 50px;"><a href="index.html">Certificatein nursing and midwifery</a></p>
-  
-                                </div>                                                                          
-                        </div> <br/> <br/> </div>
-                       <div class="last">
-                        <p3 style="position: inherit; text-align: left;">Reach us;</p3>
-                             <p><a href="https://wa.me/256751987885"><button style="background-color: rgb(13, 233, 167);border-radius: 10px;">Whatsapp</button> </a></p>
-                             <p><a href="tel:256751987885"><button style="color: rgb(115, 72, 233);border-radius: 10px;">Call us</button></a></p>
-                             <p><a href="muyanjaderr@gmail.com"><button style="scolor: rgb(39, 54, 46); border-radius: 10px;">Email us</button></a></p>
-                             <h3 style="color: bisque;"><marquee direction="right">Website by mDerrick</marquee></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-    </div>
-    <!-- Contact Info Start -->
-    <div class="container-fluid contact-info mt-5 mb-4">
-        <div class="container" style="padding: 0 30px;">
-            <div class="row">
-                <div class="col-md-4 d-flex align-items-center justify-content-center bg-secondary mb-4 mb-lg-0" style="height: 100px;">
-                    <div class="d-inline-flex">
-                        <i class="fa fa-2x fa-map-marker-alt text-white m-0 mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-white font-weight-medium">Our Location</h5>
-                            <p class="m-0 text-white">ipi,nakirebe, maya</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center bg-primary mb-4 mb-lg-0" style="height: 100px;">
-                    <div class="d-inline-flex text-left">
-                        <i class="fa fa-2x fa-envelope text-white m-0 mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-white font-weight-medium">Email Us</h5>
-                            <p class="m-0 text-white">emedicalschool@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center bg-secondary mb-4 mb-lg-0" style="height: 100px;">
-                    <div class="d-inline-flex text-left">
-                        <i class="fa fa-2x fa-phone-alt text-white m-0 mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="text-white font-weight-medium">Call/whatsapp</h5>
-                            <p class="m-0 text-white">+256751987885</p>
-                        </div>
-                    </div>
-                </div>
+         
+            <div class="content-section" id="dcm-1-1">
+                <h2>DCM 1.1</h2>
+                <h5>Past papers</h5>
+                <p><a href="index.html" target="_blank">LOADING...</a></p>
+                
+                <h5>videos</h5>
+                <p><a href="https://www.youtube.com/watch?v=YgnGPw4AxO0#:~:text=URL%3A%20https%3A%2F%2Fwww,100" target="_blank">anatomy video1</a></p> 
+                <p><a href="https://www.youtube.com/watch?v=uBGl2BujkPQ#:~:text=URL%3A%20https%3A%2F%2Fwww,100" target="_blank">anatomy video1</a></p> 
+                <p><a href="index.html" target="_blank">LOADING...</a></p> 
+                <p><a href="index.html" target="_blank">LOADING...</a></p> 
+                video links
+                <p><a href="index.html" target="_blank">LOADING...</a></p>
             </div>
-        </div>
-    </div>
-    <!-- Contact Info End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-0 pt-lg-4">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                  
-                </div>
-                <div class="col-lg-7 mt-5 mt-lg-0 pl-lg-5">
-                    
-                    
-                    
-                        <div class="col-sm-6 pt-3">
-                            <div class="d-flex align-items-center">
-                                <i class="fa fa-check text-primary mr-2"></i>
-                             
-                            </div>
-                        </div>
-                        <div class="col-sm-6 pt-3">
-                            <div class="d-flex align-items-center">
-                                <i class="fa fa-check text-primary mr-2"></i>
-                                
-                            </div>
-                        
-    <!-- Services End -->
-
-
-    <!-- Features End -->
-
-
-    <!-- Working Process Start -->
-   
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center mb-5">
-                        <div c
-                </div>
+            <div class="content-section" id="dcm-1-2">
+                <h2>DCM 1.2</h2>
+                <h3>Notes</h3>
+                <h4>Anatomy and physiology</h4>
+                <p><a href="Endocrine 1.pdf" target="_blank">Endocrine 1</a></p>
+                <p><a href="Digestive.pdf" target="_blank">digestive system</a></p>
+                <p><a href="nervous 1.pdf" target="_blank">nervous 1</a></p>
+                <p><a href="Nervous 2.pdf" target="_blank">nervous 2</a></p>
+                <p><a href="nervous 4.pdf" target="_blank">nervous 4</a></p>
+                <p><a href="Nervous 5.pdf" target="_blank">nervous 5</a></p>
+                <p><a href="nervous 7.pdf" target="_blank">nervous 7</a></p>
+                <p><a href="special senses.pdf" target="_blank">special senses</a></p>
+                <p><a href="Reproduction physiology.pdf" target="_blank">Reproductive system</a></p>
+                <h4>MICROBIOLOGY</h4>
+                <p><a href="MICRO BIOLOGY NOTES.pdf" target="_blank">Microbiology notes</a></p>
+                <h4>NUTRITION</h4>
+                <p><a href="Nutrition assessment.pdf" target="_blank">nutrion assessment</a></p>
+                <p><a href="gender and nutrition.pdf" target="_blank">gender and nutrition</a></p>
+                <p><a href="HIV and nutrition.pdf" target="_blank">hiv and nutrition</a></p>
+                <h4>PHARMACOLOGY</h4>
+                <p><a href="pharmacology intro.pdf" target="_blank">Introduction</a></p>
+                <p><a href="Pharmacokinetics notes.pdf" target="_blank">Pharmacokinetics notes</a></p>
+                <p><a href="Pharmacodynamics-How-drugs-work.pdf" target="_blank">Pharmacokinetics guide</a></p>
+                <p><a href="ANTIFUNGAL DRUGS BY HENRY_.pdf" target="_blank">Anti fungals</a></p>
+                <p><a href="Antiparasitic Drugs.pdf" target="_blank">Antiparasitic Drugs_ Malaria, Toxoplasmosis etc</a></p>
+                <p><a href="katzung-pharmacology.pdf" target="_blank">Katzung pharmacology</a></p>
+                <p><a href="Antiparasitic Drugs.pdf" target="_blank">antiparasitic</a></p>
+                <p><a href="2anti HIV drugs,ART.pptx" target="_blank">antiretro (hiv)</a></p>
             </div>
+            <div class="content-section" id="dcm-1-2">
+                <h2>DCM 1.2</h2>
+                <h3>Past papers</h3>
+                <h4>Anatomy and physiology</h4>
+                <p><a href="Anatomy 2023 (November).pdf" target="_blank">2023 nov</a></p>
+                <p><a href="Anatomy 2022 (june).pdf" target="_blank">2022 june</a></p>
+                <p><a href="Anatomy 2020(March).pdf" target="_blank">2020 march</a></p>
+                <h4>Microbiology</h4>
+                <p><a href="Micro 2023 june.pdf" target="_blank">2023 june</a></p>
+                <p><a href="MICRO  2022 DEC.pdf" target="_blank">2022 dec</a></p>
+                <p><a href="MICRO 2022 MARCH.pdf" target="_blank">2022 March</a></p>  
+                <p><a href="MICRO 2021 MAY.pdf" target="_blank">2021 may</a></p>
+                <p><a href="MICRO  2017 JULY.pdf" target="_blank">2017 july</a></p>
+                <h4>Pharmacology</h4>
+                <p><a href="PHARM 2023 NOVEMBER.pdf" target="_blank">2023 nov</a></p>
+                <p><a href="PHARM 2021 MAY.pdf" target="_blank">2021 may</a></p>
+                <p><a href="PHARM 2019 MAY.pdf" target="_blank">2019 May</a></p>  
+                
+                <h4>Nutrition</h4>
+                <p><a href="nutrition 2023 june(2).pdf" target="_blank">2023 june</a></p>
+                <p><a href="NUTRITION 2022 MARCH.pdf" target="_blank">2022 march</a></p>
+                <p><a href="NUTRITION 2019 MAY.pdf" target="_blank">2019 May</a></p>  
+                <p><a href="NUTRITION 2017 JULY.pdf" target="_blank">2017 july</a></p>
+               
+                
+            </div></div>
+            
+            <!-- Add more sections here -->
+            
         </div>
     </div>
-    </div>
-    <!-- Testimonial End -->
+</h2>  
+<h5>CLICK THE BUTTON BELOW</h5>
+<div>
+<p><button style="border-radius: 10px;"><a href="more cources.html" target="_blank">>></a></button></p></div>
+<p>For <button style="border-radius: 10px;"><a href="https;//wa.me/2567987885" target="_blank">INQUIRIES</a></button></p>
+<p><button style="border-radius: 10px; color: aqua;"><a href="index.html" target="_blank">back to top</a></button></p>
+<P>WEB SITE BY; <P style="color: #4CAF50;"><marquee direction="right">muyanja derrick</marquee></P>
+<P style="color: #4CAF50;"><marquee direction="right">CLINICAL OFFICER</marquee></P>
+    <script>
+        function navigateToSection() {
+            var dropdown = document.getElementById("dcm-dropdown");
+            var selectedValue = dropdown.value;
+            if (selectedValue) {
+                var section = document.getElementById(selectedValue);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
 
-
-    <!-- Blog Start -->
-    
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
-   
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        document.getElementById('search-bar').addEventListener('input', function() {
+            var input = this.value.toLowerCase();
+            var headings = document.querySelectorAll('.content-section h2');
+            
+            headings.forEach(function(heading) {
+                var text = heading.textContent.toLowerCase();
+                var section = heading.parentElement;
+                if (text.includes(input)) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
