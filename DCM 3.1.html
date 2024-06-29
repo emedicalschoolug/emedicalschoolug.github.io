@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medics Educational Website</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.conte-section{
+    background-image:image(carousel-12.jpg);
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dropdown {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content-section {
+            width: 45%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>E-MEDICAL SCHOOL</h1>
+            <h1>DCM 3.1</h1>
+        </header>
+        <br/>  <br/>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for headings...">
+        </div>
+        <h3> <marquee behavior="rotate" direction="up">NOTHING HERE YET...</marquee></h3>
+        <h3> <marquee behavior="rotate" direction="down">NOTHING HERE YET...</marquee></h3>
+        <h3> <marquee behavior="rotate" direction="right">NOTHING HERE YET...</marquee></h3>
+        <h3> <marquee behavior="rotate" direction="left">NOTHING HERE YET...</marquee></h3>
+        <h3>NOTHING HERE YET...</h3>
+        <!--
+        <div class="dropdown">
+            <label for="dcm-dropdown">Select DCM Notes: </label>
+            <select id="dcm-dropdown" onchange="navigateToSection()">
+                <option value="">--Select--</option> 
+                <option value="dcm-2-1">DCM 2.1</option>
+                <option value="dcm-2-2">DCM 2.2</option>
+                <option value="dcm-2-2">DCM 3.1</option>
+                <option value="dcm-2-2">DCM 3.2</option>
+               
+            </select>
+        </div>
+        <button style="border-radius: 10px; color:gold;"><p><a href="About.html" target="_blank">ABOUT US</a></p></button>
+        <button style="border-radius: 10px; color:gold;"><p><a href="index.html" target="_blank">HOME</a></p></button>
+        <button style="border-radius: 10px; color:gold;"><p><a href="more cources.html" target="_blank">Year 3</a></p></button>
+        <div class="content">
+
+<div class="content-section" id="dcm-1-2">
+                <h2>DCM 2.1</h2>
+   
+                <h3>NOTES</h3>
+                <div class="content-section" id="dcm-1-1">
+                <h3 style="color: #ee0d3e;">CLINICAL PHARMACOLOGY</h3></div>
+                
+                <h5><p><a href="katzung-clinical pharmacology.pdf" target="_blank">
+                    Basic, clinical pharmacology(Katzung)</a></p></h5>
+                    
+                <p><a href="Antiarrhythmic_drugs_.ppt" target="_blank">Antiarrhythmic_drugs_</a></p>
+                <p><a href="ADRENERGIC PHARM.ppt" target="_blank">Adrenergic pharmacology</a></p>
+                <p><a href="Adrenergic drugs.pptx" target="_blank">Adrenergic drugs</a></p>
+                <p><a href="ADRENERGIC ANTAGONISTS.pptx" target="_blank">Adrenergic antagonists</a></p>
+                <p><a href="ADRENERGIC BLOCKERS.pptx" target="_blank">Adrenergic blockers</a></p>
+                <p><a href="Treatment of congestive heart failure.pptx" target="_blank">congestive heart failure drugs</a></p>
+                <p><a href="ANTI CHOLINERGIC D.pptx" target="_blank">Anti cholinergic drugs</a></p>
+                <p><a href="Anti-anginal drugs.pptx" target="_blank">Anti anginal drugs</a></p>
+                <p><a href="Anti Asthmatic drugs.. simplified.pptx" target="_blank">Anti Asthmatic drugs</a></p>
+              
+                <p><a href="BRONCHODILATORS.ppt" target="_blank">Bronchodilators</a></p>
+                <p><a href="ANTICANCER AGENTS PDF.pdf" target="_blank">Anti cancer drugs</a></p>
+                <p><a href="ANTI CANCER DRUGS SUMMARIZED.pdf" target="_blank">Anti cancer summary</a></p>
+                <p><a href="ANTI DM DRUGS 1(1).ppt" target="_blank">Anti DM drugs</a></p>
+                <p><a href="ANTIFUNGAL DRUGS BY HENRY_.pdf" target="_blank">Anti fungal drugs</a></p>
+                <p><a href="Diuretics.ppt" target="_blank">Diuretics 1</a></p>
+                <p><a href="Diuretics 2.ppt" target="_blank">Diuretics 2</a></p>
+                <p><a href="Antidiarrheal_&_Luxatives.pptx" target="_blank">Anti diarrhea drugs</a></p>
+                
+                <p><a href="ANTIHISTAMINES 1 (1).ppt" target="_blank">Anti histamines 1</a></p>
+                <p><a href="ANTIPSYCHOTICS, ANTI-DEPRESSANTS AND MANIA.docx" target="_blank">Anti pshychotic,depressants & Mania drugs</a></p>
+                <p><a href="6. Alcohol and other drugs of abuse.pptx" target="_blank">Drugs of abuse</a></p>
+                <p><a href="ACh QUIZ.ppt" target="_blank">Ach QUIZ</a></p>
+                <p><a href="1anti HIV intron.pptx" target="_blank">1 Anti HIV </a></p>
+                <p><a href="2anti HIV drugs,ART.pptx" target="_blank">2 Anti HIV</a></p>
+                <p><a href="3HAART.pptx" target="_blank">3 Anti HIV</a></p>
+                <p><a href="4-ANTIDEPRESSANTS.ppt" target="_blank">4 Anti depressants</a></p>
+
+
+                <div class="content-section" id="dcm-1-2">
+                <h3 style="color: #ee0d3e;">PATHOLOGY AND IMMUNOLOGY</h3></div>
+               
+                <p><a href="GeneralPathology.pdf" target="_blank">GeneralPathology</a></p>
+                <p><a href="INTRODUCTION TO PATHOLOGY.ppt" target="_blank">Pathology intro</a></p>
+                <p><a href="CELL INJURY AND CELL DEATH.pptx" target="_blank">cell injury and death</a></p>
+                <p><a href="CELLULAR REACTIONS TO INJURY.pdf" target="_blank">Cell reaction to injury</a></p>
+                <p><a href="INFLAMMATION AND CELLULAR RESPONSES.ppt" target="_blank">Inflammation</a></p>
+                <p><a href="CELLULAR ADAPTATIONS TO INJURIES.ppt" target="_blank">Cell injury adaptation</a></p>
+                <p><a href="NEOPLASM 2.pptx" target="_blank">2 Neoplasm</a></p> 
+                <p><a href="WOUND HEALING lecture(1).ppt" target="_blank">1 wound healing</a></p>
+                <p><a href="Medical Examination of an Injured Person - Police Form 3 (2).pdf" target="_blank">
+                    Medical examination of injured person (police form 3)</a></p>
+                <p><a href="INTRODUCTION TO IMMUNOLOGY.ppt" target="_blank">Immunology intro</a></p>
+
+                <p><a href="Complement-System.pdf" target="_blank">Complement-System</a></p>
+                <p><a href="HYPERSENSITIVITY REACTIONS 2019.pptx" target="_blank">Hypersensitivity reactions</a></p>
+                <p><a href="IMMUNOPATHOLOGY I{By Mr Kafumbe}.pdf" target="_blank">Immunopathology</a></p>
+                <p><a href="introduction to serology.ppt" target="_blank">Serology intro</a></p>
+                <p><a href="LIVER FUNCTION TESTS(SYLIVIA)-1.docx" target="_blank">Liver fxn tests</a></p>
+                <p><a href="haemathopathology.pptx" target="_blank">Haemathopathology</a></p>
+                <p><a href="Hematology2-1.pdf" target="_blank">Hematology 1</a></p>
+                
+                <p><a href="Haematology.ppt" target="_blank">Hematology 2</a></p>
+                <p><a href="Haematinics.pptx" target="_blank">Haematinics</a></p>
+                <p><a href="CLINICAL CHEMISTRY.pptx" target="_blank">Clinical chemistry</a></p>
+                <p><a href="CBC interpretation Summarized.pdf" target="_blank">CBC interpretation</a></p>
+           
+                <p>More loading...</p>
+                <div class="content-section" id="dcm-1-1">
+                <h3 style="color: #ee0d3e;">MENTAL HEALTH</h3></div>
+                <p><a href="1.INTRODUCTION TO MENTAL HEALTH.pptx" target="_blank">Mental health intro</a></p>
+                <h5><p><a href="Fishs Clinical Psychopathology 4th Edition by Kelly  Brendan Casey  Patrici.pdf" target="_blank">
+                    Fish's Psychopathology 4th Edition</a></p></h5>               
+            <h5><p><a href="The Essential Diagnostic  Manual of Mental Disorders.pdf" target="_blank">Diagnostic manual</a></p></h5>
+                <p><a href="2.History taking in psychiatry.pptx" target="_blank">History taking in psychiatry pts</a></p>
+                <p><a href="9. Anxiety disorders Mgt.pptx" target="_blank">Anxiety disorder</a></p>
+                <p><a href="5. Dementia.pptx" target="_blank">Dementia</a></p>
+                <p><a href="10. SUICIDE AND OTHER PSYCHIATRIC EMERGENCIES.pptx" target="_blank">Suicide and other emergencies</a></p>
+                <p><a href="11. The Aggressive patient.pptx" target="_blank">Aggressive pts</a></p>
+                <p><a href="EPILEPSY.pptm" target="_blank">Epilepsy</a></p>
+                <p><a href="Psychosocial Support Services and Psychotherapy.pptx" target="_blank">Psychosocial support</a></p>
+                <p><a href="Symptomatology of Mental Illness.pptx" target="_blank">Symptomatology of mental illness</a></p>
+                <p><a href="MENTAL RETARDATION.pptx" target="_blank">Mental retardation</a></p>
+                <p><a href="MENTAL HEALTH NOTES..pdf" target="_blank">Mental health notes</a></p>
+                <p><a href="MENTAL HEALTH ILLNESS.pptx" target="_blank">Mental health illnesses</a></p>
+                <p>more loading...</p>
+
+            </div>
+         
+
+         
+            <div class="content-section" id="dcm-1-1">
+                <h4>DCM 2.1 CONT.......</h4>
+                <div class="content-section" id="dcm-1-1">
+                <h3 style="color: #ee0d3e;"> REPRODUCTIVE HEALTH</h3></div>
+       
+               <p><a href="5. School Adolescents' Health.pdf" target="_blank">School Adolescents health</a></p>
+               <p><a href="6-Antenatal care ~39.ppt" target="_blank">Antenatal care</a></p>
+               <p><a href="5.1 Gynecological Emergencies - 2 hour lecture-TZ-1 - Copy.ppt" target="_blank">Gynecological emergencies</a></p>
+               <p><a href="Abortion - Copy (1).pptx" target="_blank">Abortion 1</a></p>
+               <p><a href="ADOLESCENT REPRODUCTIVE (Lecture 14)(1).pptx" target="_blank">Adolescents reprodutive health</a></p>
+               <p><a href="family planning (2).pptx" target="_blank">Family planning</a></p>
+               <p><a href="Labour.pptx" target="_blank">Labour</a></p>
+               <p><a href="MANAGING LABOUR USING THE PARTOGRAPH-DORECK (2).ppt" target="_blank">Labour mngt using patrograph</a></p>
+               <p><a href="MANAGEMENT OF THE THIRD STAGE OF LABOUR the real stuff (1).ppt" target="_blank">Mngt of 3rd stage of Labour</a></p>
+               <p><a href="NORMAL LABOUR (1).docx" target="_blank">Normal Labour</a></p>
+
+               <div class="content-section" id="dcm-1-1">
+               <h3 style="color: #ee0d3e;">PALLIATIVE CARE</h3></div>
+
+               <p><a href="History of paliative care.ppt" target="_blank">History of palliative care</a></p>
+ 
+               <p>more loading...</p>
+
+               <div class="content-section" id="dcm-1-1">
+               <h3 style="color: #ee0d3e;">ENVIRONMENTAL HEALTH</h3></div>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+               <p><a href="path/to/your/pdf1.pdf" target="_blank">LOADING...</a></p>
+            </a></p>
+               
+            </div>
+            <div class="content-section" id="dcm-1-2">
+                <h2>DCM 3.1</h2>
+                <h3>Notes</h3>
+                <h4>..........</h4>
+                <p><a href="more cources.html" target="_blank">LOADING...</a></p>
+               
+            </div> </div></div>
+            <div class="content-section" id="dcm-1-2">
+                <h2>DCM 3.2</h2>
+                <h3>Past papers</h3>
+                <h4>..........</h4>
+                <p><a href="more cources.html" target="_blank">LOADING...</a></p>
+               
+                <h4>..........</h4>
+                <p><a href="more cources.html" target="_blank">LOADING...</a></p>
+               
+                <h4>..........</h4>
+                <p><a href="more cources.html" target="_blank">LOADING...</a></p>
+               
+                
+            </div></div>
+            
+            <!-- Add more sections here -->
+            
+        </div>
+    </div>
+</h2>  
+<h5>CLICK THE BUTTON BELOW</h5>
+<div>
+    <button style="border-radius: 15px;  background-color:rgb(68, 143, 212);"><p><a href="DCM 3.2.html" target="_blank">DCM 3.2</a></p></button>
+<button style="border-radius: 15px; background-color:rgb(73, 216, 133);"><p><a href="DCM 2.2.html" target="_blank">BACK</a></p></button>
+<button style="border-radius: 15px;  background-color:rgb(68, 143, 212);"><p><a href="index.html" target="_blank">HOME</a></p></button>
+</div>
+
+<P>WEBSITE BY; 
+    <h3> <marquee behavior="rotate" direction="up">Muyanja Derrick</marquee></h3>
+    <h3> <marquee behavior="rotate" direction="down">Muyanja Derrick</marquee></h3>
+    <h3> <marquee behavior="rotate" direction="diagonal">+256751987885</marquee></h3>
+<P style="color: #4CAF50;"><marquee direction="right">CLINICAL OFFICER</marquee></P>
+<script>
+    function navigateToSection() {
+        var dropdown = document.getElementById("dcm-dropdown");
+        var selectedValue = dropdown.value;
+        if (selectedValue) {
+            var section = document.getElementById(selectedValue);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
+
+    document.getElementById('search-bar').addEventListener('input', function() {
+        var input = this.value.toLowerCase();
+        var headings = document.querySelectorAll('.content-section h2');
+        
+        headings.forEach(function(heading) {
+            var text = heading.textContent.toLowerCase();
+            var section = heading.parentElement;
+            if (text.includes(input)) {
+                section.style.display = '';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>
