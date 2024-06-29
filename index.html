@@ -110,32 +110,57 @@ body, html {
         <header>
             <h1>WELCOME TO E-MEDICAL SCHOOL</h1>
         </header>
-        
+        <br/>
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Search for headings...">
         </div>
         
         <div class="dropdown">
-            <label for="dcm-dropdown">Select DCM Notes: </label>
+            <label for="dcm-dropdown">Select Year:</label>
             <select id="dcm-dropdown" onchange="navigateToSection()">
                 <option value="">--Select--</option>
                 <option value="dcm-1-1">DCM 1.1</option>
                 <option value="dcm-1-2">DCM 1.2</option>
-                <option value="more cources.html">go 2 nxt page</option>
+                <option value="more cources.html">go 2 year 2</option>
                 
            
             </select>
         </div>
-        <button style="border-radius: 10px; color:gold;"><p><a href="index.html" target="_blank">HOME</a></p></button>
+        <!--dropdown2-->
+        <!---
+        <div class="dropdown">
+            <label for="dcm-dropdown">Select course unit: </label>
+            <select id="dcm-dropdown" onchange="navigateToSection()">
+                <option value="">--Select--</option>
+                <option value="dcm-1-1">First aid</option>
+                <option value="dcm-1-2">Anatomy</option>
+                <option value="dcm-1-3">Psychology</option>
+                <option value="dcm-1-4">Nursing</option>
+                <option value="dcm-1-5">PHC</option>
+                <option value="dcm-1-6">Medical ethics</option>
+                <option value="more cources.html">go 2 year 2</option>
+                
+           
+            </select>
+        </div>->
+         <!--dropdown2 end-->
+         
+       <div style="align-content: center;"><h3></h3><button style="border-radius: 50px; background-color:rgb(104, 168, 221);"><p><a href="index.html" target="_blank">HOME</a></p></button>
         
-        <button style="border-radius: 10px; color:gold;"><p><a href="About.html" target="_blank">About us</a></p></button>
-        <button style="border-radius: 10px; color:gold;"><p><a href="more cources.html" target="_blank">more cources</a></p></button>
+        <button style="border-radius: 50px; background-color:rgb(160, 231, 187);"><p><a href="About.html" target="_blank">ABOUT US</a></p></button>
+        <button style="border-radius: 50px; background-color:rgb(175, 164, 164);"><p><a href="more cources.html" target="_blank">DCM 2.1</a></p></button></h4>
+        <button style="border-radius: 50px; background-color:rgb(219, 98, 98);"><p><a href="year 3.html" target="_blank">DCM 2.2</a></p></button>
+        <button style="border-radius: 50px; background-color:rgb(202, 54, 54);"><p><a href="year 3.html" target="_blank">DCM 3.1</a></p></button>
+        <button style="border-radius: 50px; background-color:rgb(248, 10, 10);"><p><a href="year 3.html" target="_blank">DCM 3.2</a></p></button>
         
+       </div>
         <div class="content">
             <div class="content-section" id="dcm-1-1">
                 <h2>DCM 1.1</h2>
                 <h3>NOTES</h3>
-                <h4>First aid</h4>
+                <div class="content-section" id="dcm-1-1">
+                <h4>First aid</h4></div>
+                
               
                 <p><a href="First aid notes.pdf" target="_blank">First aid notes</a></p>
                 <p><a href="First Aid Made Easy.pdf" target="_blank">first aid made easy</a></p>
@@ -143,21 +168,31 @@ body, html {
                 <h4>Videos(firt aid)</h4>
                 <p><a href="https://www.youtube.com/watch?v=5OKFljZ2GQE" target="_blank">watch a video1</a></p>
                 <p><a href="https://www.youtube.com/watch?v=QneVtFJYySo#:~:text=URL%3A%20https%3A%2F%2Fwww,100" target="_blank">wath a video2</a></p>
-                <h4>Aanatomy & physiology</h4>
+                
+                <div class="content-section" id="dcm-1-1">
+                <h4>Anatomy & physiology</h4></div>
                 <p><a href="RESPIRATORY SYSTEM.pdf" target="_blank">Respiratory system</a></p>
                 <p><a href="TheCirculatorySystem.pdf" target="_blank">The CirculatorySystem</a></p>
                 <p><a href="URINARY  SYSTEM.pdf" target="_blank">Urinary system</a></p>
-                <h4>Psychology</h4>
+
+                <div class="content-section" id="dcm-1-3">
+                <h4>Psychology</h4></div>
+
                 <p><a href="psychology.pdf" target="_blank">Social psychology</a></p>
-                <h4>Nursing practices</h4>
+
+                <div class="content-section" id="dcm-1-4">
+                <h4>Nursing practices</h4></div>
+
                 <p><a href="nursing manual.pdf" target="_blank">Nursing manual</a></p>
-                
-                <h4>PHC</h4>
+                <div class="content-section" id="dcm-1-5">
+                <h4>PHC</h4></div>
                 <p><a href="PHC intro.pdf" target="_blank">PHC intro</a></p>
-                <h4>Medical ethics</h4>
+
+                <div class="content-section" id="dcm-1-6">
+                <h4>Medical ethics</h4></div>
                 <p><a href="MEDICAL ETHICS.pdf" target="_blank">Introduction to medical ethics</a></p>
-                <h4>ICT</h4>
-                <p><a href="ICT NOTES 2022 this sem Notes.pdf" target="_blank">ICT notes</a></p>
+
+                
             </div>
          
             <div class="content-section" id="dcm-1-1">
@@ -176,7 +211,8 @@ body, html {
             <div class="content-section" id="dcm-1-2">
                 <h2>DCM 1.2</h2>
                 <h3>Notes</h3>
-                <h4>Anatomy and physiology</h4>
+                <div class="content-section" id="dcm-1-7">
+                <h4 style="color: #e71ad6ea;">Anatomy and physiology</h4></div>
                 <p><a href="Endocrine 1.pdf" target="_blank">Endocrine 1</a></p>
                 <p><a href="Digestive.pdf" target="_blank">digestive system</a></p>
                 <p><a href="nervous 1.pdf" target="_blank">nervous 1</a></p>
@@ -186,13 +222,18 @@ body, html {
                 <p><a href="nervous 7.pdf" target="_blank">nervous 7</a></p>
                 <p><a href="special senses.pdf" target="_blank">special senses</a></p>
                 <p><a href="Reproduction physiology.pdf" target="_blank">Reproductive system</a></p>
-                <h4>MICROBIOLOGY</h4>
+
+                <div class="content-section" id="dcm-1-8">
+                <h4 style="color: #e71ad6ea;">MICROBIOLOGY</h4></div>
+
                 <p><a href="MICRO BIOLOGY NOTES.pdf" target="_blank">Microbiology notes</a></p>
-                <h4>NUTRITION</h4>
+                <div class="content-section" id="dcm-1-8">
+                <h4 style="color: #e71ad6ea;">NUTRITION</h4></div>
                 <p><a href="Nutrition assessment.pdf" target="_blank">nutrion assessment</a></p>
                 <p><a href="gender and nutrition.pdf" target="_blank">gender and nutrition</a></p>
                 <p><a href="HIV and nutrition.pdf" target="_blank">hiv and nutrition</a></p>
-                <h4>PHARMACOLOGY</h4>
+                <div class="content-section" id="dcm-1-9">
+                <h4 style="color: #e71ad6ea;">PHARMACOLOGY</h4></div>
                 <p><a href="pharmacology intro.pdf" target="_blank">Introduction</a></p>
                 <p><a href="Pharmacokinetics notes.pdf" target="_blank">Pharmacokinetics notes</a></p>
                 <p><a href="Pharmacodynamics-How-drugs-work.pdf" target="_blank">Pharmacokinetics guide</a></p>
@@ -201,10 +242,14 @@ body, html {
                 <p><a href="katzung-pharmacology.pdf" target="_blank">Katzung pharmacology</a></p>
                 <p><a href="Antiparasitic Drugs.pdf" target="_blank">antiparasitic</a></p>
                 <p><a href="2anti HIV drugs,ART.pptx" target="_blank">antiretro (hiv)</a></p>
+                <div class="content-section" id="dcm-1-10">
+                    <h4 style="color: #e71ad6ea;">ICT</h4></div>
+                    <p><a href="ICT NOTES 2022 this sem Notes.pdf" target="_blank">ICT notes</a></p>
             </div>
             <div class="content-section" id="dcm-1-2">
                 <h2>DCM 1.2</h2>
                 <h3>Past papers</h3>
+               
                 <h4>Anatomy and physiology</h4>
                 <p><a href="Anatomy 2023 (November).pdf" target="_blank">2023 nov</a></p>
                 <p><a href="Anatomy 2022 (june).pdf" target="_blank">2022 june</a></p>
@@ -239,7 +284,10 @@ body, html {
 <p><button style="border-radius: 10px;"><a href="more cources.html" target="_blank">>></a></button></p></div>
 <p>For <button style="border-radius: 10px;"><a href="https://wa.me/256751987885" target="_blank">INQUIRIES</a></button></p>
 <p><button style="border-radius: 10px; color: aqua;"><a href="index.html" target="_blank">back to top</a></button></p>
-<P>WEB SITE BY; <P style="color: #4CAF50;"><marquee direction="right">muyanja derrick</marquee></P>
+<P>WEBSITE BY; 
+    <h3> <marquee behavior="rotate" direction="up">Muyanja Derrick</marquee></h3>
+    <h3> <marquee behavior="rotate" direction="down">Muyanja Derrick</marquee></h3>
+    <h3> <marquee behavior="rotate" direction="diagonal">+256751987885</marquee></h3>
 <P style="color: #4CAF50;"><marquee direction="right">CLINICAL OFFICER</marquee></P>
     <script>
         function navigateToSection() {
